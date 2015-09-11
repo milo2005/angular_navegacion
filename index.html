@@ -5,11 +5,15 @@
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.min.js"></script>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular-route.js"></script>
     <script type="text/javascript" src="app.js"></script>
+    <script type="text/javascript" src="controllers/UserController.js"></script>
+    <script type="text/javascript" src="controllers/CarController.js"></script>
     <title>Rutas</title>
+    <base href="/rutas/"/>
   </head>
   <body ng-app="app">
-    <a href="user/12?name=Dario&vehiculos=12">Perfil</a>
-
+    <a href="user/12?name=dario&vehiculos=12">Perfil Usuario</a>
+    <br>
+    <a href="user/12/car/1?name=Amenaza">Carro Favorito</a>
     <div ng-view></div>
 
   </body>
