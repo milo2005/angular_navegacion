@@ -13,7 +13,13 @@ var app = angular.module("app",['ngRoute'])
         controller:'CarController',
         templateUrl:'views/car.html'
       }
-    );
+    ).when(
+      '/car/:idcar',
+      {
+        controller:'CarController',
+        templateUrl:'views/detail.html'
+
+      });
     $locationProvider.html5Mode(true);
 
 });

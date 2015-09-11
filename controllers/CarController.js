@@ -1,7 +1,8 @@
-app.controller("CarController",function($scope,$routeParams){
-  $scope.id=$routeParams.id;
+app.controller("CarController",function($scope,$routeParams,$location){
+  $scope.id=$routeParams.idcar;
   $scope.name =$routeParams.name;
   $scope.goDetails=function(){
-    alert("Detalles");
+    $location.path("car/2?name=hola");
+
   };
 });
